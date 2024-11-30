@@ -1,0 +1,97 @@
+main.html
+card
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature Request Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <span class="card-id">CAM-11</span>
+      <img src="profile.jpg" alt="User profile" class="profile-pic">
+    </div>
+    <h2 class="card-title">Conduct Security Vulnerability Assessment</h2>
+    <div class="card-footer">
+      <div class="icon">
+        <span>!</span>
+      </div>
+      <span class="tag">Feature Request</span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 300px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card-id {
+  font-weight: bold;
+  font-size: 14px;
+  color: #666;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 16px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  background-color: #f5c6cb;
+  color: #721c24;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.tag {
+  background-color: #eaf5ff;
+  color: #0056b3;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
