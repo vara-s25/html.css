@@ -1,0 +1,128 @@
+main.html 
+ DISPLAY
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanban Board</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #f4f4f4;
+    }
+    .board {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+    .column {
+      background: #ffffff;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+    }
+    .column-header {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .task {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      cursor: grab;
+    }
+    .task:last-child {
+      margin-bottom: 0;
+    }
+    .task .task-id {
+      font-weight: bold;
+      color: #555;
+    }
+    .task .task-type {
+      font-size: 12px;
+      color: #999;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="board">
+    <!-- To Do Column -->
+    <div class="column">
+      <div class="column-header">To Do</div>
+      <div class="task">
+        <div class="task-id">CAM-5</div>
+        <div>Add Multi-Language Support</div>
+        <div class="task-type">Feature Request</div>
+      </div>
+      <div class="task">
+        <div class="task-id">CAM-8</div>
+        <div>Create Onboarding Tutorial for New Users</div>
+        <div class="task-type">Feature Request</div>
+      </div>
+      <div class="task">
+        <div class="task-id">CAM-2</div>
+        <div>Implement Email Notification System</div>
+        <div class="task-type">Feature Request</div>
+      </div>
+    </div>
+          <div class="task">
+        <div class="task-id">CAM-4</div>
+        <div>Add Multi-Language Support </div>
+        <div class="task-type">Feature Request</div>
+      </div>
+    </div>
+    <!-- In Progress Column -->
+    <div class="column">
+      <div class="column-header">In Progress</div>
+      <div class="task">
+        <div class="task-id">CAM-3</div>
+        <div>Optimize Database Queries for Performance</div>
+        <div class="task-type">Feature Request</div>
+      </div>
+    </div>
+
+    <!-- Done Column -->
+    <div class="column">
+      <div class="column-header">Done</div>
+      <div class="task">
+        <div class="task-id">CAM-6</div>
+        <div>Enhance Search Functionality</div>
+        <div class="task-type">Feature Request</div>
+      </div>
+      <div class="task">
+        <div class="task-id">CAM-7</div>
+        <div>Integrate Third-Party Payment Gateway</div>
+        <div class="task-type">Feature Request</div>
+      </div>
+      <div class="task">
+        <div class="task-id">CAM-11</div>
+        <div>Conduct Security Vulnerability Assessment</div>
+        <div class="task-type">Feature Request</div>
+      </div>
+      <div class="task">
+        <div class="task-id">CAM-10</div>
+        <div>Upgrade Server Infrastructure</div>
+        <div class="task-type">Feature Request</div>
+      </div>
+      <div class="task">
+        <div class="task-id">CAM-9</div>
+        <div>Implement Role-Based Access Control (RBAC)</div>
+        <div class="task-type">Feature Request</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
