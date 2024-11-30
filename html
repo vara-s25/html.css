@@ -1,1 +1,118 @@
 index.html
+State based on display. - Grouping by user is selected.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanban Board - Grouped by User</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 20px;
+background-color: #f4f4f4;
+color: #333;
+}
+h1 {
+font-size: 20px;
+text-align: center;
+margin-bottom: 20px;
+}
+.board {
+display: flex;
+gap: 20px;
+justify-content: center;
+}
+.column {
+background: #ffffff;
+border-radius: 8px;
+width: 250px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+padding: 15px;
+}
+.column-header {
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 10px;
+border-bottom: 2px solid #ddd;
+padding-bottom: 5px;
+}
+.task {
+background: #f9f9f9;
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 10px;
+margin-bottom: 10px;
+font-size: 14px;
+}
+.task:last-child {
+margin-bottom: 0;
+}
+.task .task-id {
+font-weight: bold;
+color: #555;
+}
+.task .task-type {
+font-size: 12px;
+color: #999;
+margin-top: 5px;
+}
+</style>
+</head>
+<body>
+<h1>State Based on Display - Grouping by User</h1>
+<div class="board">
+<!-- Abhideep Malty -->
+<div class="column">
+<div class="column-header">Abhideep Malty - 1</div>
+<div class="task">
+<div class="task-id">CAM-8</div>
+<div>Create Onboarding Tutorial for New Users</div>
+<div class="task-type">Feature Request</div>
+</div>
+</div>
+<!-- Akanksha Punjabi -->
+<div class="column">
+<div class="column-header">Akanksha Punjabi - 1</div>
+<div class="task">
+<div class="task-id">CAM-5</div>
+<div>Add Multi-Language Support</div>
+<div class="task-type">Feature Request</div>
+</div>
+</div>
+<!-- Anoop Sharma -->
+<div class="column">
+<div class="column-header">Anoop Sharma - 1</div>
+<div class="task">
+<div class="task-id">CAM-4</div>
+<div>Add Multi-Language Support</div>
+<div class="task-type">Feature Request</div>
+</div>
+</div>
+<!-- Arbaaz Sayyed -->
+<div class="column">
+<div class="column-header">Arbaaz Sayyed - 2</div>
+<div class="task">
+<div class="task-id">CAM-7</div>
+<div>Integrate Third-Party Payment Gateway</div>
+<div class="task-type">Feature Request</div>
+</div>
+<div class="task">
+<div class="task-id">CAM-2</div>
+<div>Implement Email Notification System</div>
+<div class="task-type">Feature Request</div>
+</div>
+</div>
+<!-- Harsh Navani -->
+<div class="column">
+<div class="column-header">Harsh Navani - 1</div>
+<div class="task">
+<div class="task-id">CAM-1</div>
+<div>Update User Profile Page UI</div>
+<div class="task-type">Feature Request</div>
+</div>
+</div>
+</div>
+</body>
+</html>
